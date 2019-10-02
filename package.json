@@ -1,42 +1,42 @@
 {
-  "name": "silkapi",
-  "title": "SILK API Server",
-  "version": "1.0.0",
-  "description": "SILK API for internal purposes. This may be used for mapping, logging, tracking, artifact, data src, etc",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://smartinfologiks@bitbucket.org/silkprojects/silk-api.git"
-  },
-  "keywords": [
-    "SILK",
-    "API",
-    "InHouse"
-  ],
-  "author": "SmartinfoLogiks Team <admin@smartinfologiks.com>",
-  "license": "SILK",
-  "homepage": "https://bitbucket.org/silkprojects/silk-api#readme",
-  "dependencies": {
-    "ioredis": "^4.0.0",
-    "jsonwebtoken": "^8.4.0",
-    "lodash": "^4.17.11",
-    "md5": "^2.2.1",
-    "moment": "^2.22.2",
-    "mongoose": "^5.2.17",
-    "mongoose-plugin-autoinc": "^1.1.9",
-    "mongoose-string-query": "^0.2.5",
-    "mongoose-timestamp": "^0.6.0",
-    "mysql": "github:mysqljs/mysql",
-    "nodemailer": "^4.7.0",
-    "restify": "^7.2.1",
-    "restify-errors": "^6.1.1",
-    "restify-jwt-community": "^1.0.9",
-    "restify-logger": "^2.0.1",
-    "restify-plugins": "^1.6.0",
-    "rotating-file-stream": "^1.3.9"
-  }
+    "name": "silkapi",
+    "title": "SILK API Server",
+    "version": "1.0.0",
+    "description": "SILK API for internal purposes. This may be used for mapping, logging, tracking, artifact, data src, etc",
+    "main": "index.js",
+    "scripts": {
+        "start": "clear;node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://smartinfologiks@bitbucket.org/silkprojects/silk-api.git"
+    },
+    "keywords": [
+        "SILK",
+        "API",
+        "InHouse"
+    ],
+    "author": "SmartinfoLogiks Team <admin@smartinfologiks.com>",
+    "license": "SILK",
+    "homepage": "https://bitbucket.org/silkprojects/silk-api#readme",
+    "dependencies": {
+        "ioredis": "^4.0.0",
+        "jsonwebtoken": "^8.4.0",
+        "lodash": "^4.17.11",
+        "md5": "^2.2.1",
+        "moment": "^2.22.2",
+        "mongoose": "^5.2.17",
+        "mongoose-plugin-autoinc": "^1.1.9",
+        "mongoose-string-query": "^0.2.5",
+        "mongoose-timestamp": "^0.6.0",
+        "mysql": "github:mysqljs/mysql",
+        "nodemailer": "^4.7.0",
+        "restify": "^7.2.1",
+        "restify-errors": "^6.1.1",
+        "restify-jwt-community": "^1.0.9",
+        "restify-logger": "^2.0.1",
+        "restify-plugins": "^1.6.0",
+        "rotating-file-stream": "^1.3.9"
+    }
 }

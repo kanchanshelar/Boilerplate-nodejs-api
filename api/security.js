@@ -8,17 +8,17 @@ module.exports = function(server) {
         // return next(
         //     new errors.ForbiddenError("Public Key Invalid"),
         // );
-    
-        mbeeKey = req.header("appkey");
-    
-        req.set("GUID","TEST");
-    
+
+        authkey = req.header("authkey");
+
+        req.set("GUID", "TEST");
+
         //API Validator : FIND API Authentication Protocol for the GUID
         //Could be Bearer, OAuth2, 2FA, etc.
         mbeeAuth = req.header("authorization");
 
         //console.log("Security Authorization");
-    
+
         return next();
     });
 

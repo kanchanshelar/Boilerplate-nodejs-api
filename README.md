@@ -1,24 +1,41 @@
-# Boilerplate Nodejs API
+# Parking And Parking Server
 
-Boilerplate to quickly start a new API only project. This does not have a lots of wasted code. Just Point Blank Basic System.
+This is the central data server for Parking and Parking. It handles all the inward trafic from mobile apps and IOT [BEEConnect] Servers.
 
-This is based on Restify Framework, and is just meant to shorten your time to start work.
+## Planned API List
 
-### Installation
-+ Clone the repo
-+ Install using npm install
-+ Create a api/config.js from api/config_sample.js
-+ Update the paramaters in api/config.js
-+ Done, now start using npm start. 
+#### For Mobile App
++ Profile
+    + Fetch My Profile
+    + Update My Profile
+    + Change PWD
+    + Parking History
+    + Search History
+    + Payment History
+    + Feedback History
+    + Ticket History
++ Users
+    + Login
+    + Register
+    + Forgot PWD
+    + Reset PWD with Forgot PWD Key
++ Parking
+    + Search Parking
+    + Book Parking
+    + Mark Parking
+    + Release Parking
++ Payment
 
-This should give you a basic api at 9999 (If you have not changed the port). Hit the URL printed on Console and verify if its running.
 
-### Extending to use the system
-+ Just add as many routes into the api/routes folder
-+ Restart the node processs
-+ Thats it, as simple as that
+#### For Booking Agent App
 
 
+#### For Data App
 
-### Reference
-+ http://restify.com/docs/home/
+
+#### For Logging
+
+
+#### For Admin
+
+

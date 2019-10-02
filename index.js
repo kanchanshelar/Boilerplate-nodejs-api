@@ -1,5 +1,5 @@
 /*
- * SILK API Server
+ * Parking And Parking Main Server
  * 
  * @author : Bismay <bismay@smartinfologiks.com>
  * */
@@ -12,6 +12,7 @@ const env = {};
 const restify = require('restify');
 const restifyPlugins = require('restify-plugins');
 const errors = require('restify-errors');
+const bunyan = require('bunyan');
 
 const mongoose = require('mongoose');
 const mongooseStringQuery = require('mongoose-string-query');
@@ -22,17 +23,17 @@ const mysql = require('mysql');
 
 const ioredis = require('ioredis');
 
-const fs = require('fs');
-const path = require('path');
-const bunyan = require('bunyan');
+global.fs = require('fs');
+global.path = require('path');
 
-env.moment = require('moment');
-env._ = require('lodash');
+
+global.moment = require('moment');
+global._ = require('lodash');
 
 /**
  * Create A Logger, may be we will remove this in future
  */
-const logger = bunyan.createLogger({
+global.logger = bunyan.createLogger({
     name: config.name,
     streams: [{
         level: 'error',
@@ -62,11 +63,11 @@ require('./api/security')(server, restify);
 require('./api/routes')(server, restify); // Load Basic System Routes
 
 fs.readdirSync('./api/routes/').forEach(function(file) {
-  if((file.indexOf(".js")>0 && (file.indexOf(".js")+3==file.length))) {
-    filePath = path.resolve( './api/routes/' + file );
-    require(filePath)(server, restify);
-  }
-  //   console.log("Loading Route : " + filePath);
+    if ((file.indexOf(".js") > 0 && (file.indexOf(".js") + 3 == file.length))) {
+        filePath = path.resolve('./api/routes/' + file);
+        require(filePath)(server, restify);
+    }
+    //   console.log("Loading Route : " + filePath);
 });
 
 /**
@@ -84,7 +85,8 @@ server.listen(config.port, () => {
     //Setup Mongoose->MongoDB
     mongoose.Promise = global.Promise;
     mongoose.connect(config.dbmongo.uri, {
-        useNewUrlParser: true
+        useNewUrlParser: true,
+        useUnifiedTopology: true
     });
 
     server.mongodb = mongoose.connection;
@@ -96,20 +98,20 @@ server.listen(config.port, () => {
 
     server.mongodb.once('open', () => {
         //DB Setup Code
-        server.use(function (req, res, next) {
-//             server.mysql.connect();
- 
-//             server.mysql.query('SHOW TABLES', function (error, results, fields) {
-//                 if (error) throw error;
-//                 console.log(results,"MYSQL");
-//             });
-            
+        server.use(function(req, res, next) {
+            //             server.mysql.connect();
+
+            //             server.mysql.query('SHOW TABLES', function (error, results, fields) {
+            //                 if (error) throw error;
+            //                 console.log(results,"MYSQL");
+            //             });
+
             // server.mysql.end();
 
             next();
         });
 
-        console.log(`${server.config.name} is listening on port ${config.port}`);
+        console.log(`${server.config.name} is listening on port http://${config.host}:${config.port}/`);
     });
 
     //console.log(`${server.config.name} is listening on port ${config.port}`);
