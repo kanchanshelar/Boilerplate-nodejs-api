@@ -7,6 +7,23 @@ module.exports = {
 	env: process.env.NODE_ENV || 'development',
 	port: process.env.PORT || 9999,
 	base_url: process.env.BASE_URL || 'http://localhost:9999',
+	debug: true,
+	welcome: "Welcome to eStore API Server",
+	allow_home_info: false,
+
+	LOGGER: [
+        	{
+			type: 'rotating-file',
+			period: '1d',                       // daily rotation
+			count: 3,                           // keep 3 back copies
+			level: 'error',                     // log level
+			path: './logs/logs.log'             // log ERROR and above to a file
+		},
+		{
+			level: 'error',                     //log level
+			stream: process.stdout              // log INFO and above to stdout
+		}
+	],
 
 	noauth: [
 		"/auth",
