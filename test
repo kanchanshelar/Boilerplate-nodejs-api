@@ -1,0 +1,63 @@
+[33mcommit 3ff916eddf6ad12cfab75e3ddb51eeddd155c984[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Kanchan Shelar <skanchand@gmail.com>
+Date:   Thu Jul 30 19:59:30 2020 +0530
+
+    Story 182: fixes done
+
+[33mcommit fa081e5b5c798e364bf6bf64748ad931a3ed7d9c[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Bismay Kumar Mohapatra <bismay4u@gmail.com>
+Date:   Sat Mar 7 00:31:47 2020 +0530
+
+    Updated Debug Enviroment Configuration
+
+[33mcommit 06cc3688e5ca9acc26df7332c6dcf6b5b30a3280[m
+Author: Bismay Kumar Mohapatra <bismay4u@gmail.com>
+Date:   Sat Mar 7 00:22:06 2020 +0530
+
+    Updated config sample
+
+[33mcommit 63924851ca54b20886aa4ec512c02dfe224dd446[m
+Author: Bismay Kumar Mohapatra <bismay4u@gmail.com>
+Date:   Wed Jan 22 16:14:43 2020 +0530
+
+    Security Fixes
+
+[33mcommit bf12244d46c58b3f6f043d88ca814cc5e7c4fc9c[m
+Author: Bismay Kumar Mohapatra <bismay4u@gmail.com>
+Date:   Thu Oct 3 00:42:45 2019 +0530
+
+    Updated files
+
+[33mcommit 8fc8d42e5e588e35581c822d5f03efb760f5b078[m
+Author: Bismay Kumar Mohapatra <bismay4u@gmail.com>
+Date:   Thu Oct 3 00:09:15 2019 +0530
+
+    Completed the structure, next completing security system
+
+[33mcommit 52352ce1bd835dd704eae4ef04d4aa009b528f28[m
+Author: Bismay Kumar Mohapatra <bismay4u@gmail.com>
+Date:   Wed Jan 30 23:18:07 2019 +0530
+
+    Major updates
+    
+    + Added few sample files for helpers
+    + Updated data router
+    + Updated security
+
+[33mcommit c85c59020ccea4c82ef6d3f41f427c8637bf4492[m
+Author: Bismay Kumar Mohapatra <bismay4u@gmail.com>
+Date:   Mon Nov 12 04:05:33 2018 +0530
+
+    Added logs folder
+
+[33mcommit c09a3c46cf60b05845d18150686dc712aa4514b5[m
+Author: Bismay Kumar Mohapatra <bismay4u@gmail.com>
+Date:   Mon Nov 12 04:04:41 2018 +0530
+
+    First commit, verified its working process. Its good to go.
+
+[33mcommit b4a0f365173f2559e41435b00db4a50a2ac0ed20[m
+Author: Bismay Kumar Mohapatra <bismay4u@gmail.com>
+Date:   Mon Nov 12 03:50:18 2018 +0530
+
+    Initial commit
