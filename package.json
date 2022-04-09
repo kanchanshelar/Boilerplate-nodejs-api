@@ -25,7 +25,7 @@
         "jsonwebtoken": "^8.4.0",
         "lodash": "^4.17.11",
         "md5": "^2.2.1",
-        "moment": "^2.22.2",
+        "moment": "^2.29.2",
         "mongoose": "^5.7.5",
         "mongoose-plugin-autoinc": "^1.1.9",
         "mongoose-string-query": "^0.2.5",
